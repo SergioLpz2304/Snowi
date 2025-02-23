@@ -30,9 +30,7 @@ const SnowMap = () => {
       
       <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxWidth: "400px", margin: "auto" }}>
 
-        <h1>
-          <img src="/src/Assests/Snow.svg" alt="Logo" style={{ height: "30px", verticalAlign: "middle" }} />
-        </h1>
+        {/* <h1>Snowi - Snow Tracking App</h1> */}
         <h2>Report Snow Issue</h2>
             <label for="location">Location:</label>
             <input type="text" id="location" placeholder="Enter location" />

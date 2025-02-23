@@ -4,10 +4,8 @@ import SnowMap from "./SnowMap";
 function App() {
   return (
     <div>
-      {/* <header>
-        <a href="#" className="logo"><img src={process.env.PUBLIC_URL + "/Images/Snow.svg"} alt="Logo" /></a>
-      </header> */}
-      <h1>Snowi - Snow Tracking App</h1>
+    
+      <div class="heading" style ={{display: "flex"}}><h1 class="heading1">Snow</h1><h1 class="heading2">i</h1> </div>
       <SnowMap />
       
     </div>
