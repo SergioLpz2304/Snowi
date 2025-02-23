@@ -1,14 +1,19 @@
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getFunctions } from 'firebase/functions';
+
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_ID",
-    appId: "YOUR_APP_ID"
-};
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+    apiKey: "AIzaSyCEqRf8KnmFL1X-VxwGoLCxnPHMUxSqNaA",
+    authDomain: "snowi-b249b.firebaseapp.com",
+    projectId: "snowi-b249b",
+    storageBucket: "snowi-b249b.firebasestorage.app",
+    messagingSenderId: "138820944893",
+    appId: "1:138820944893:web:c996384d01d6b5f8bc4f94"
+  };
 
-// Initialize Firebase Functions
-const functions = firebase.functions();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const functions = getFunctions(app);
+
+export { db, functions };

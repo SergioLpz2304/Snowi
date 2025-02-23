@@ -6,6 +6,7 @@ function App() {
     <div>
       <h1>Snowi - Snow Tracking App</h1>
       <SnowMap />
+      
     </div>
   );
 }
