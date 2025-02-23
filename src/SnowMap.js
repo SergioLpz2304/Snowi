@@ -11,7 +11,7 @@ const SnowMap = () => {
       </MapContainer>
 
       {/* Floating Button for Reporting an Issue (No Navigation Logic) */}
-      <button className="report-button" onClick={() => {}}>
+      <button className="report-button" onClick={openForm()}>
         Report an Issue
       </button>
     </div>

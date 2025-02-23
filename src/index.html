@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Snowi</h1>
+        <h2>Report Snow Issues</h2>
+    </header>
+    <main>
+        <div id="map"></div>
+        <button id="reportButton" onclick="openForm()">Report an Issue</button>
+        <div id="reportForm" style="display: none;">
+            <h2>Report Snow Issue</h2>
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location">
+            <label for="issueType">Issue Type:</label>
+            <select id="issueType">
+                <option value="Ping Snow Removers">Ping Snow Removers</option>
+                <option value="Pay to Clean">Pay to Clean</option>
+                <option value="Volunteer to Clean">Volunteer to Clean</option>
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+            <button id="submitButton" onclick="submitReport()">Submit Report</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="firebase.js"></script>
+</body>
+</html>
