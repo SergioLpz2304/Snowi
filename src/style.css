@@ -1,14 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+    background-color: #e6f3ff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 header {
-    background-color: #4169e1;
-    color: white;
+    background-color: #84c2ff;
+    color: #e6f3ff;
     padding: 20px;
 }
 
@@ -20,11 +20,11 @@ main {
     width: 80%;
     height: 400px;
     margin: 20px auto;
-    border: 2px solid #4169e1;
+    border: 2px solid #84c2ff;
 }
 
 button {
-    background-color: #4169e1;
+    background-color: #84c2ff;
     color: white;
     border: none;
     padding: 10px 20px;

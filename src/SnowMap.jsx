@@ -25,12 +25,14 @@ const SnowMap = () => {
       <button className="report-button" onClick={handleClicked}>
         Report an Issue
       </button></> : 
-      
+  
       <>
       
-      <div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px", maxWidth: "400px", margin: "auto" }}>
 
-
+        <h1>
+          <img src="/src/Assests/Snow.svg" alt="Logo" style={{ height: "30px", verticalAlign: "middle" }} />
+        </h1>
         <h2>Report Snow Issue</h2>
             <label for="location">Location:</label>
             <input type="text" id="location" placeholder="Enter location" />
@@ -42,7 +44,7 @@ const SnowMap = () => {
             </select>
             <label for="description">Description:</label>
             <textarea id="description" placeholder="Enter description"></textarea>
-            <button id="submitButton" onclick="submitReport()">Submit Report</button>
+            <button href="#" id="submitButton" onclick="submitReport()">Submit Report</button>
 
 
 
@@ -51,6 +53,7 @@ const SnowMap = () => {
 
       </>
       
+
       }
 
     </div>
